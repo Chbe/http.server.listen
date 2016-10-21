@@ -10,7 +10,7 @@ var io = require('socket.io')(http);
 var path = require('path');
 
 //get our port # from c9's enviromental variable: PORT
-var port = process.env.PORT;
+var port = process.env.PORT || 3000;
 
 //Set our view engine to EJS, and set the directory our views will be stored in
 app.set('view engine', 'ejs');

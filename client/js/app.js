@@ -10,6 +10,7 @@ var myApp = angular.module('myApp', [
         $routeProvider.when('/projects', {templateUrl: '/partials/projects.html', controller: 'projectsController'});
         $routeProvider.when('/projects/customerapi', {templateUrl: '/partials/projects/customerapi.html', controller: 'customerApiController'});
         $routeProvider.when('/projects/chat', {templateUrl: '/partials/projects/chat.html', controller: 'chatController'});
+        $routeProvider.when('/android', {templateUrl: '/partials/android.html', controller: 'androidController'});
         
         //if no valid routes are found, redirect to /home
         $routeProvider.otherwise({redirectTo: '/home'});
