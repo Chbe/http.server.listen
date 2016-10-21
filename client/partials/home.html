@@ -1,9 +1,21 @@
-<div class="row">
+<div class="row" >
+    
+    <div class="col-md-6">
+        
+    </div>
+    
+    <div class="col-md-6" id="about">
+        <h2>Welcome!</h2>
+        <p>
+            This is a website build with a node.js server, AngularJS and contains a real-time chat function using socket.IO
+        </p>       
+    </div>
+    
     <div class="col-md-8 col-md-offset-2">
         <carousel interval="myInterval">
           <slide ng-repeat="slide in slides" active="slide.active">
               <a href="{{slide.link}}" target="blank">
-                  <img ng-src="{{slide.image}}" style="margin:auto;">
+                  <img ng-src="{{slide.image}}" style="margin:auto;" width="350px" height="350px">
               </a>
           </slide>
         </carousel>        

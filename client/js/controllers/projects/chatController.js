@@ -9,7 +9,7 @@ myApp.controller('chatController', ['$scope', 'Socket', function($scope, Socket)
                 Socket.emit('add-user', {username: name})
             }
             else {
-                promptUsername('You must enter a username!');
+                window.location = "https://httpserver-chatastropher.c9users.io/projects";
             }
         })
     }
