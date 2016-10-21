@@ -1,0 +1,42 @@
+#about-image {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#about h2 {
+    border-bottom: 1px solid black;
+}
+p {
+    text-indent: 40px;
+}
+
+tr.ng-enter{
+    animation: fadeIn 1s;
+}
+
+/*tr.ng-leave{*/
+/*    animation: slideOutLeft 1s;*/
+/*}*/
+
+#customer-table{
+    height: 400px;
+}
+
+.user-window{
+    border-left: 2px solid black;
+    height: 300px;
+}
+.username{
+    color: red;
+    font-weight: bold;
+}
+
+.chat-window{
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+ul {
+    list-style-type: none;
+}
