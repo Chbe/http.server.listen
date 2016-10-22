@@ -44,3 +44,9 @@ ul {
 #onlineUsers {
     border-bottom: 1px solid black;
 }
+
+#headericon {
+    width: 30px;
+    height: 30px;
+    
+}
