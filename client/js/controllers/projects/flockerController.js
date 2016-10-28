@@ -1,3 +1,3 @@
-myApp.controller('flockerController', ['$scope', function($scope){
-    
+myApp.controller('flockerController', ['$scope', function($scope) {
+
 }]);
