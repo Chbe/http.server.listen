@@ -10,7 +10,7 @@ var myApp = angular.module('myApp', [
         $routeProvider.when('/projects', {templateUrl: '/partials/projects.html', controller: 'projectsController'});
         $routeProvider.when('/projects/customerapi', {templateUrl: '/partials/projects/customerapi.html', controller: 'customerApiController'});
         $routeProvider.when('/projects/chat', {templateUrl: '/partials/projects/chat.html', controller: 'chatController'});
-        $routeProvider.when('/Public/index', {templateUrl: '/Android/Public/index.html', controller: 'main'});
+        $routeProvider.when('/projects/flocker', {templateUrl: '/partials/projects/flocker.html', controller: 'flockerController'});
         
         //if no valid routes are found, redirect to /home
         $routeProvider.otherwise({redirectTo: '/home'});
