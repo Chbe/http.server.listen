@@ -1,19 +1,16 @@
-// Setup basic express server
+//Initialize our Express Web framework.
 var express = require('express');
 var app = express();
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
-var port = process.env.PORT || 3000;
 
-server.listen(port, function () {
-  console.log('Server listening at port %d', port);
-});
+//socket IO stuff
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 
 //native NodeJS module for resolving paths
 var path = require('path');
 
-
-
+//get our port # from c9's enviromental variable: PORT
+var port = process.env.PORT || 3000;
 
 //Set our view engine to EJS, and set the directory our views will be stored in
 app.set('view engine', 'ejs');
@@ -67,6 +64,6 @@ app.get('/*', function(req, res) {
   res.render('index.ejs');
 });
 
-/*http.listen(port, function() {
+http.listen(port, function() {
     console.log('Server running... PORT: ' +port);
-});*/
+});
