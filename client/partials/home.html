@@ -1,25 +1,20 @@
-<div class="row" >
-    
+<div class="row">
     <div class="col-md-6">
-        
-    </div>
-    
-    <div class="col-md-6" id="about">
-        <h2>Welcome!</h2>
-        <p>
-            This is a website build with a node.js server and contains a real-time chat function using socket.IO, which soon
-            will be avalible as and Android application. The plan is that before you enter the chat on your Android, you set a raidius
-            to only reveive messages from people within that radius.
-        </p>       
-    </div>
-    
-    <div class="col-md-8 col-md-offset-2">
         <carousel interval="myInterval">
-          <slide ng-repeat="slide in slides" active="slide.active">
-              <a href="{{slide.link}}" target="blank">
-                  <img ng-src="{{slide.image}}" style="margin:auto;" width="350px" height="350px">
-              </a>
-          </slide>
-        </carousel>        
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <a href="{{slide.link}}" target="blank">
+                    <img ng-src="{{slide.image}}" style="margin:auto;" width="350px" height="350px">
+                </a>
+            </slide>
+        </carousel>
+    </div>
+
+    <div class="col-md-6" id="about">
+        <h2>Hey!</h2>
+        <p>
+            Welcome to my website without any particular purpose! Just look at the slideshow, I wanted to have one but didnt know what pictures to use. But since this site is running on a node.js server, why not a node-picture? The website contains two chat applications
+            using socket.io, so why not a socket.io-picture? And, one of them is also compatible with a android application I've made so yeah, there is an android-logo in the side as well. That app is kinda cool btw, you can set a radius on how far away
+            you want to receive messages from. Yey.
+        </p>
     </div>
 </div>
